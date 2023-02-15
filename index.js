@@ -26,7 +26,3 @@ function wrapAdjective(inPut, adjective) {
         }
     }
 }
-
-/* return str = function(str2) {
-        return `You are ${inPut}${str2}${inPut}!`
-    } */

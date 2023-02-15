@@ -15,8 +15,18 @@ const mondayWork = function(work) {
     }
 }
 
-function wrapAdjective(inPut = "*") {
-    return str = function(str2) {
-        return `You are ${inPut}${str2}${inPut}!`
+function wrapAdjective(inPut, adjective) {
+    if (inPut === "*") {
+        return function(adjective) {
+            return `You are *${adjective}*!`
+        }
+    } else if (inPut === "||") {
+        return function(adjective) {
+            return `You are ||${adjective}||!`
+        }
     }
 }
+
+/* return str = function(str2) {
+        return `You are ${inPut}${str2}${inPut}!`
+    } */
